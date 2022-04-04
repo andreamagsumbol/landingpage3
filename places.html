@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places I Want to Visit</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Montserrat:wght@400;700&family=Poppins:ital,wght@0,400;0,700;1,600&family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            font-size: 16px;
+            font-family: poppins, Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-image: linear-gradient(#D31F3C, #F36E4D);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+            margin: 1rem 0;
+            text-shadow: 3px 3px 10px rgb(139, 59, 59);
+        }
+
+        h2{
+            font-size: 1.5rem;
+        }
+
+        h3{
+            font-weight: lighter;
+            font-size: 1rem;
+            font-style: italic;
+        }
+
+        .row{
+            display: flex;
+            justify-content: center;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .row > *{
+            margin: 1vw 1vw;
+        }
+        
+        .col{
+            height: auto;
+            width: 300px;
+            background-color: rgb(255, 255, 255);
+            box-sizing: border-box;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 3px 3px 10px rgb(139, 59, 59);
+            transition: all .5s;
+        }
+
+        .col > *{
+            margin-bottom: .5rem;
+        }
+
+        .col:hover{
+            transform: scale(1.05);
+            transition: all .5s;
+        }
+
+        img{
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            overflow: hidden;
+        }
+
+        p:not(.title){
+            text-indent: 2rem;
+        }
+
+        audio{
+            width: 100%;
+        }
+
+        .title{
+            color: gray;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            background-color: #232323;
+            padding: .5rem;
+            border-radius: 0.8rem;
+            transition: all .5s;
+        }
+
+        a:hover{
+            transition: all .5s;
+            background-color: white;
+            border: 2px solid #232323;
+            color: #232323;
+        }
+
+        li{
+            list-style: none;
+            text-align: center;
+            padding-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <li><a href="landingpage.html" target="child">Landing Page</a></li>
+        <h1>Places I Want to Visit</h1>
+        <div class="row">
+            <div class="col">
+                <h2>Paris, France</h2>
+                <img src="paris.jpeg" alt="">
+                <p>Paris is one of the most beautiful cities in the world. It is known worldwide for the Louvre Museum, Notre-Dame cathedral, and the Eiffel tower. It has a reputation of being a romantic and cultural city.</p>
+            </div>
+            <div class="col">
+                <h2>Palawan, Philippines</h2>
+                <img src="palawan.jpeg" alt="">
+                <p>
+                    Image result for palawan philippines
+                    Palawan is also known as the Philippines' “Last Ecological Frontier”. Its forests and seas are home to impressive biodiversity and it is this kind of natural beauty that keeps visitors coming.</p>
+            </div>
+            <div class="col">
+                <h2>South Island, New Zealand</h2>
+                <img src="newzealand.jpeg" alt="">
+                <p>The Island is well-known for its lakes, glaciers and lush green mountains. The Southern Alps can be found here as well as many national parks and reserves. New Zealand's South Island is now booming because of all the wonderful opportunities that it offers to its tourists.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>Bora Bora</h2>
+                <img src="borabora.jpeg" alt="">
+                <p>Bora Bora is a small South Pacific island northwest of Tahiti in French Polynesia. Surrounded by sand-fringed motus (islets) and a turquoise lagoon protected by a coral reef, it’s known for its scuba diving.</p>
+            </div>
+            <div class="col">
+                <h2>Maui</h2>
+                <img src="maui.webp" alt="">
+                <p>Maui is an island in the Central Pacific, part of the Hawaiian archipelago. Sprawling Haleakala National Park encompasses the island’s highest peak, volcanic Haleakala, as well as the pools and waterfalls of Ohe’o Gulch, accessed via scenic, winding Hana Highway.</p>
+            </div>
+            <div class="col">
+                <h2>London, England</h2>
+                <img src="london.jpeg" alt="">
+                <p>London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times. At its centre stand the imposing Houses of Parliament, the iconic ‘Big Ben’ clock tower and Westminster Abbey, site of British monarch coronations.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

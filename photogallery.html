@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Montserrat:wght@400;700&family=Poppins:ital,wght@0,400;0,700;1,600&family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            background-image: linear-gradient(#D31F3C, #F36E4D);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        section{
+            height: auto;
+            width: 100%;
+        }
+
+        h1, h2, p{
+            color: white;
+        }
+
+        h2, p{
+            margin: 10px 0 10px 0;
+        }
+
+        h1, h2{
+            font-family: poppins;
+        }
+
+        h1{
+            font-size: 50px;
+            text-align: center;
+            padding: 20px;
+            text-shadow: 3px 3px 5px #771212;
+        }
+
+        p{
+            font-family: montserrat;
+        }
+
+        h2, p{
+            color: black;
+        }
+
+        .container{
+            background-color: rgb(255, 255, 255);
+            width: 300px;
+            padding: 15px;
+            transition: all .5s;
+            box-shadow: 3px 3px 5px #771212;
+            height: auto;
+            margin: 10px;
+        }
+
+        .container:hover{
+            transform: scale(1.05);
+            transition: all .5s;
+        }
+
+        .links > div{
+            margin: 10px;
+        }
+
+        .links{
+            display: inline-grid;
+            grid-template-columns: 1fr 1fr;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+        }
+
+        img{
+            display: flex;
+            margin:0 auto;
+            overflow: hidden;
+            height: 200px;
+            width: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        ul{
+            list-style: none;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        a:not(.card){
+            font-family: poppins;
+            color: white;
+            background-color: rgb(32, 32, 32);
+            padding: 8px;
+            border-radius: 8px;
+            transition: all .5s;
+
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        a:hover:not(.card){
+            border: solid 3px rgb(32, 32, 32);
+            color: rgb(32, 32, 32);
+            background-color: white;
+            transition: all .5s;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Photo Gallery</h1>
+        <ul><li><a href="landingpage.html" target="child">Landing Page</a></li></ul>
+        <div class="links">
+
+            <a href="childhood.JPG" class="card" target="child">
+                <div class="container">
+                    <img src="childhood.JPG" alt="">
+                    <h2>A Journey of my Life</h2>
+                    <p>The best experience I had was my childhood years. My parents would always spoil me with...</p>
+                </div>
+            </a>
+
+            <a href="teenage.JPG" class="card" target="child">
+                <div class="container">
+                    <img src="teenage.JPG" alt="">
+                    <h2>A Journey of my Life</h2>
+                    <p>During my teenage years, I would say that my experience was so-so. I did a lot of...</p>
+                </div>
+            </a>
+
+            <a href="college.JPG" class="card" target="child">
+                <div class="container">
+                    <img src="college.JPG" alt="">
+                    <h2>A Journey of my Life</h2>
+                    <p>My college years is still on-going and I’m only halfway of it, but I’m still happy because lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+                </div>
+            </a>
+
+            <a href="skills.JPG" class="card" target="child">
+                <div class="container">
+                    <img src="skills.JPG" alt="">
+                    <h2>Things that excite me the most</h2>
+                    <p>I have been honing my skills in drawing, designing and coding for years...</p>
+                </div>
+            </a>
+
+            <a href="hobbies.JPG" class="card" target="child">
+                <div class="container">
+                    <img src="hobbies.JPG" alt="">
+                    <h2>Things that excite me the most</h2>
+                    <p>When I think of what are my hobbies, I have a lot in mind and that includes...</p>
+                </div>
+            </a>
+
+            <a href="interests.JPG" class="card" target="child">
+                <div class="container">
+                    <img src="interests.JPG" alt="">
+                    <h2>Things that excite me the most</h2>
+                    <p>My interests since I was a child were games. Since then, I have been into technology stuff...</p>
+                </div>
+            </a>
+
+            <a href="andimags-01.png" class="card" target="child">
+                <div class="container">
+                    <img src="andimags-01.png" alt="">
+                    <h2>Resume</h2>
+                    <p>Aspiring software & full-stack developer who already has done multiple commissions and personal projects. A quick...</p>
+                </div>
+            </a>
+        </div>
+    </section>
+</body>
+</html>

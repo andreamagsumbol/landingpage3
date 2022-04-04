@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Kind of Film</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Montserrat:wght@400;700&family=Poppins:ital,wght@0,400;0,700;1,600&family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            font-size: 16px;
+            font-family: poppins, Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-image: linear-gradient(#D31F3C, #F36E4D);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+            margin: 1rem 0;
+            text-shadow: 3px 3px 10px rgb(139, 59, 59);
+        }
+
+        h2{
+            font-size: 1.5rem;
+        }
+
+        h3{
+            font-weight: lighter;
+            font-size: 1rem;
+            font-style: italic;
+        }
+
+        .row{
+            display: flex;
+            justify-content: center;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .row > *{
+            margin: 1vw 1vw;
+        }
+        
+        .col{
+            height: auto;
+            width: 600px;
+            /* width: min(500px, 100%); */
+            background-color: rgb(255, 255, 255);
+            box-sizing: border-box;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 3px 3px 10px rgb(139, 59, 59);
+            transition: all .5s;
+        }
+
+        .col > *{
+            margin-bottom: 1rem;
+        }
+
+        .col:hover{
+            transform: scale(1.05);
+            transition: all .5s;
+        }
+
+        img{
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            overflow: hidden;
+        }
+
+        p:not(.title){
+            text-indent: 2rem;
+        }
+
+        audio{
+            width: 100%;
+        }
+
+        .title{
+            color: gray;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            background-color: #232323;
+            padding: .5rem;
+            border-radius: 0.8rem;
+            transition: all .5s;
+        }
+
+        a:hover{
+            transition: all .5s;
+            background-color: white;
+            border: 2px solid #232323;
+            color: #232323;
+        }
+
+        li{
+            list-style: none;
+            text-align: center;
+            padding-top: 2rem;
+        }
+
+        hr{
+            border-top: 1px solid rgb(209, 209, 209);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <li><a href="landingpage.html" target="child">Landing Page</a></li>
+        <h1>My Kind of Film</h1>
+        <div class="row">
+            <div class="col">
+                <h2>Horror/Thriller</h2>
+                <video controls width="100%" height="auto">
+                    <source src="conjuring.mp4" type="video/mp4">
+                </video>
+                <h3>Conjuring</h3>
+                <p>The Conjuring is a 2013 American supernatural horror film directed by James Wan and written by Chad Hayes and Carey W. Hayes. It is the inaugural film in the Conjuring Universe franchise.</p>
+                <!-- <p class="title">Misery Business</p> -->
+                <hr>
+                <video controls width="100%" height="auto">
+                    <source src="insidious.mp4" type="video/mp4">
+                </video>
+                <h3>Insidious</h3>
+                <p>Insidious is a 2010 American supernatural horror film directed by James Wan, written by Leigh Whannell, and starring Patrick Wilson, Rose Byrne, and Barbara Hershey. It is the first installment in the Insidious franchise, and the third in terms of the series' in-story chronology.</p>
+            </div>
+            <div class="col">
+                <h2>Adventure/Action</h2>
+                <video controls width="100%" height="auto">
+                    <source src="hungergames.mp4" type="video/mp4">
+                </video>
+                <h3>The Hunger Games</h3>
+                <p>The Hunger Games film series is composed of science fiction dystopian adventure films, based on The Hunger Games trilogy of novels by the American author Suzanne Collins. The movies are distributed by Lionsgate and produced by Nina Jacobson and Jon Kilik.</p>
+                <!-- <p class="title">Misery Business</p> -->
+                <hr>
+                <video controls width="100%" height="auto">
+                    <source src="mazerunner.mp4" type="video/mp4">
+                </video>
+                <h3>The Maze Runner</h3>
+                <p>The Maze Runner is a 2014 American dystopian science fiction film directed by Wes Ball, in his directorial debut, based on James Dashner's 2009 novel of the same name. </p>
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
+</html>

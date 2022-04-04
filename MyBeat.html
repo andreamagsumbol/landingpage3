@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Beat</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Montserrat:wght@400;700&family=Poppins:ital,wght@0,400;0,700;1,600&family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            font-size: 16px;
+            font-family: poppins, Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-image: linear-gradient(#D31F3C, #F36E4D);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+            margin: 1rem 0;
+            text-shadow: 3px 3px 10px rgb(139, 59, 59);
+        }
+
+        h2{
+            font-size: 1.5rem;
+        }
+
+        h3{
+            font-weight: lighter;
+            font-size: 1rem;
+            font-style: italic;
+        }
+
+        .row{
+            display: flex;
+            justify-content: center;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .row > *{
+            margin: 1vw 1vw;
+        }
+        
+        .col{
+            height: auto;
+            width: 300px;
+            background-color: rgb(255, 255, 255);
+            box-sizing: border-box;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 3px 3px 10px rgb(139, 59, 59);
+            transition: all .5s;
+        }
+
+        .col > *{
+            margin-bottom: .5rem;
+        }
+
+        .col:hover{
+            transform: scale(1.05);
+            transition: all .5s;
+        }
+
+        img{
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            overflow: hidden;
+        }
+
+        p:not(.title){
+            text-indent: 2rem;
+        }
+
+        audio{
+            width: 100%;
+        }
+
+        .title{
+            color: gray;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            background-color: #232323;
+            padding: .5rem;
+            border-radius: 0.8rem;
+            transition: all .5s;
+        }
+
+        a:hover{
+            transition: all .5s;
+            background-color: white;
+            border: 2px solid #232323;
+            color: #232323;
+        }
+
+        li{
+            list-style: none;
+            text-align: center;
+            padding-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <li><a href="landingpage.html" target="child">Landing Page</a></li>
+        <h1>My Beat</h1>
+        <div class="row">
+            <div class="col">
+                <h2>Punk rock</h2>
+                <img src="paramore.jpeg" alt="">
+                <h3>Paramore</h3>
+                <p>Paramore is an American rock band from Franklin, Tennessee, formed in 2004. </p>
+                <audio controls>
+                    <source src="paramore.mp3" type="audio/mpeg">
+                </audio>
+                <p class="title">Misery Business</p>
+            </div>
+            <div class="col">
+                <h2>Indie/Alternative</h2>
+                <img src="1975.jpeg" alt="">
+                <h3>The 1975</h3>
+                <p>The 1975 are an English pop rock band formed in 2002 in Wilmslow, Cheshire, now based in Manchester.</p>
+                <audio controls>
+                    <source src="1975.mp3" type="audio/mpeg">
+                </audio>
+                <p class="title">Chocolate</p>
+
+            </div>
+            <div class="col">
+                <h2>K-R&B</h2>
+                <img src="dprlive.jpeg" alt="">
+                <h3>DPR Live</h3>
+                <p>Hong Da-bin, better known by his stage name DPR Live, is a South Korean rapper and singer.</p>
+                <audio controls>
+                    <source src="dprlive.mp3" type="audio/mpeg">
+                </audio>
+                <p class="title">Jasmine</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>Metal</h2>
+                <img src="maneskin.jpeg" alt="">
+                <h3>Maneskin</h3>
+                <p>Måneskin is an Italian rock band formed in Rome in 2016. The band is composed of vocalist Damiano David, bassist Victoria De Angelis, guitarist Thomas Raggi, and drummer Ethan Torchio.</p>
+                <audio controls>
+                    <source src="maneskin.mp3" type="audio/mpeg">
+                </audio>
+                <p class="title">ZITTI E BUONI</p>
+
+            </div>
+            <div class="col">
+                <h2>Classic</h2>
+                <img src="frankie.jpeg" alt="">
+                <h3>Frankie Valli</h3>
+                <p>Francesco Stephen Castelluccio, known professionally as Frankie Valli, is an American singer, known as the frontman of the Four Seasons beginning in 1960.</p>
+                <audio controls>
+                    <source src="frankie.mp3" type="audio/mpeg">
+                </audio>
+                <p class="title">Can't Take My Eyes off You</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

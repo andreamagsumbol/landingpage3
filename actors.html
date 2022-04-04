@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Actors</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Montserrat:wght@400;700&family=Poppins:ital,wght@0,400;0,700;1,600&family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            font-size: 16px;
+            font-family: poppins, Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-image: linear-gradient(#D31F3C, #F36E4D);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+            margin: 1rem 0;
+            text-shadow: 3px 3px 10px rgb(139, 59, 59);
+        }
+
+        h2{
+            font-size: 1.5rem;
+        }
+
+        h3{
+            font-weight: lighter;
+            font-size: 1rem;
+            font-style: italic;
+        }
+
+        .row{
+            display: flex;
+            justify-content: center;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .row > *{
+            margin: 1vw 1vw;
+        }
+        
+        .col{
+            height: auto;
+            width: 300px;
+            background-color: rgb(255, 255, 255);
+            box-sizing: border-box;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 3px 3px 10px rgb(139, 59, 59);
+            transition: all .5s;
+        }
+
+        .col > *{
+            margin-bottom: .5rem;
+        }
+
+        .col:hover{
+            transform: scale(1.05);
+            transition: all .5s;
+        }
+
+        img{
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            overflow: hidden;
+        }
+
+        p:not(.title){
+            text-indent: 2rem;
+        }
+
+        audio{
+            width: 100%;
+        }
+
+        .title{
+            color: gray;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            background-color: #232323;
+            padding: .5rem;
+            border-radius: 0.8rem;
+            transition: all .5s;
+        }
+
+        a:hover{
+            transition: all .5s;
+            background-color: white;
+            border: 2px solid #232323;
+            color: #232323;
+        }
+
+        li{
+            list-style: none;
+            text-align: center;
+            padding-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <li><a href="landingpage.html" target="child">Landing Page</a></li>
+        <h1>My Favorite Actors</h1>
+        <div class="row">
+            <div class="col">
+                <h2>Alycia Debnam-Carey</h2>
+                <img src="alycia.webp" alt="">
+                <p>Alycia Jasmin Debnam-Carey is an Australian actress. She is best known for her portrayals of the characters Lexa on the dystopian science fiction television series The 100 and Alicia Clark on the AMC horror drama series Fear the Walking Dead.</p>
+            </div>
+            <div class="col">
+                <h2>Dylan O'brien</h2>
+                <img src="dylan.jpeg" alt="">
+                <p>Dylan Rhodes O'Brien is an American actor. His first major role was Stiles Stilinski on the MTV supernatural drama Teen Wolf, where he was a series regular during all six seasons.</p>
+            </div>
+            <div class="col">
+                <h2>Aron Piper</h2>
+                <img src="aron.webp" alt="">
+                <p>Arón Julio Manuel Piper Barbero is a German-Spanish actor, singer and model known for playing Ander Muñoz in the Netflix teen drama Elite.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>Úrsula Corberó</h2>
+                <img src="ursula.webp" alt="">
+                <p>Úrsula Corberó Delgado is a Spanish actress and model. She is best known for her roles as Ruth Gómez in Física o química, Margarita de Austria in the television series Isabel and Marta in the comedy film Cómo Sobrevivir a una Despedida.</p>
+            </div>
+            <div class="col">
+                <h2>Emilia Clarke</h2>
+                <img src="emilia.webp" alt="">
+                <p>Emilia Isobel Euphemia Rose Clarke is an English actress. She studied at the Drama Centre London, appearing in a number of stage productions. Her television debut was a guest appearance in the BBC One medical soap opera Doctors in 2009.</p>
+            </div>
+            <div class="col">
+                <h2>Viola Davis</h2>
+                <img src="viola.jpeg" alt="">
+                <p>Viola Davis is an American actress and producer. The recipient of various accolades, including an Academy Award, a Primetime Emmy Award, and two Tony Awards, she is the first African-American to achieve the Triple Crown of Acting.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
